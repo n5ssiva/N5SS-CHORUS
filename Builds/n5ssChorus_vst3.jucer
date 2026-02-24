@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="DBW2W8" name="N5SS-CHORUS" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" version="1.1.0"
+              pluginManufacturer="n5ssiva" pluginVST3Category="Modulation"
+              pluginAAXCategory="32">
+  <MAINGROUP id="QyGxDL" name="N5SS-CHORUS">
+    <GROUP id="{1E31D56E-3D21-2FCF-2D84-A47092BDFE9C}" name="Source">
+      <GROUP id="{1001F076-279F-01C9-4A57-DA9C78B06445}" name="Ressources">
+        <FILE id="yULlON" name="1_OFF.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/1_OFF.png"/>
+        <FILE id="YegI2x" name="1_ON.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/1_ON.png"/>
+        <FILE id="hvpzuX" name="2_OFF.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/2_OFF.png"/>
+        <FILE id="NecQgY" name="2_ON.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/2_ON.png"/>
+        <FILE id="pSbDDb" name="3_OFF.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/3_OFF.png"/>
+        <FILE id="pDc7YJ" name="3_ON.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/3_ON.png"/>
+        <FILE id="TisuUZ" name="4_ON.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/4_ON.png"/>
+        <FILE id="XrX4Nk" name="4_OFF.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/4_OFF.png"/>
+        <FILE id="HTN9Wm" name="25%_OFF.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/25%_OFF.png"/>
+        <FILE id="Zx8VGN" name="25%_ON.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/25%_ON.png"/>
+        <FILE id="y4Y2Im" name="50%_OFF.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/50%_OFF.png"/>
+        <FILE id="PGILB7" name="50%_ON.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/50%_ON.png"/>
+        <FILE id="pBZSNL" name="75%_OFF.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/75%_OFF.png"/>
+        <FILE id="VbaS6d" name="75%_ON.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/75%_ON.png"/>
+        <FILE id="bvcbzl" name="100%_OFF.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/100%_OFF.png"/>
+        <FILE id="ilAsSZ" name="100%_ON.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/100%_ON.png"/>
+        <FILE id="i0lgm0" name="Blank_GUI.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/Blank_GUI.png"/>
+        <FILE id="iv6CnP" name="bypass_OFF.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/bypass_OFF.png"/>
+        <FILE id="ff8fKE" name="bypass_ON.png" compile="0" resource="1" file="../Assets-N5SS-CHORUS/bypass_ON.png"/>
+      </GROUP>
+      <FILE id="eMSUia" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="LawtTz" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="VyldHL" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="w4SAAI" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors_headless" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="n5ssChorus_vst3"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="n5ssChorus_vst3"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../Doc/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../Doc/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../Doc/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../Doc/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../Doc/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors_headless" path="../Doc/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../Doc/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../Doc/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../Doc/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../Doc/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../Doc/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../Doc/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../Doc/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../Doc/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
