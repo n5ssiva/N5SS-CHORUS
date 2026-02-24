@@ -60,7 +60,7 @@ MIT License — Free to use, modify, and distribute.
 
 ## Author
 
-Made by **Nass**
+Made by **n5ssiva**
 
 ---
 
